@@ -5,7 +5,7 @@ import { idbPromise } from "../../utils/helpers";
 
 const CartItem = ({ item }) => {
 
-  const [, dispatch] = useDispatch();
+  const dispatch = useDispatch();
 
   const removeFromCart = item => {
     dispatch({

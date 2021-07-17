@@ -1,10 +1,3 @@
-const initialState= {
-  products: [],
-  cart: [],
-  cartOpen: false,
-  categories: [],
-  currentCategory: '',
-}
 import {
   UPDATE_PRODUCTS,
   ADD_TO_CART,
@@ -16,6 +9,14 @@ import {
   CLEAR_CART,
   TOGGLE_CART
 } from "./actions";
+
+const initialState= {
+  products: [],
+  cart: [],
+  cartOpen: false,
+  categories: [],
+  currentCategory: '',
+}
 
 export const reducer = (state= initialState, action) => {
   switch (action.type) {
