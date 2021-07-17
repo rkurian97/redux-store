@@ -1,13 +1,7 @@
 import {createStore} from 'redux'
-import { useProductReducer } from './reducers'
+import reducer from './reducers'
 
 
-const store= createStore(useProductReducer({
-  products: [],
-  cart: [],
-  cartOpen: false,
-  categories: [],
-  currentCategory: '',
-}));
+export default createStore(reducer);
 
-export default store
+
